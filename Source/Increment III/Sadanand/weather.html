@@ -1,0 +1,51 @@
+<ion-view view-title="  Weather Redirect"  ng-controller="WeatherCtrl">
+<ion-header-bar class="bar-calm">
+  <h1 class="title">Weather Forecast</h1>
+
+</ion-header-bar>
+<ion-content style="background: url(img/wea10.jpg) center; background-size: cover;" padding="true" class="has-header">
+
+  <div class="list">
+    <div class="item item-input-inset">
+      <label class="item item-input-wrapper">
+        <input type="text"  id="state" placeholder="State"  ng-model="text1" style="width:110px " height="110px" >
+        <input type="text" id="city" placeholder="City" ng-model="text" style="width:110px " height="110px">
+
+      </label>
+
+      <button class="button button-balanced button-large button-shape" style="width: 30%" ng-click="weather()"> Get</button>
+    </div>
+  </div>
+
+
+
+    <div class="list card">
+      <div class="item item-divider" style="color: #0a9ec7"><h1><font color="black">City: {{city}}</font></h1></div>
+
+        <h1>{{weather.weather[0].main}}</h1>
+      </div>
+      <div class="item item-icon-left">
+    <i class="icon ion-thermometer"></i>
+    <h2>Climate Conditions: {{weathercond}}</h2>
+     </div>
+      <div class="item item-icon-left">
+        <i class="icon ion-thermometer"></i>
+        <h2>Current Temperature: {{temp}}&deg;</h2>
+      </div>
+      <div class="item item-icon-left">
+        <i class="icon ion-thermometer"></i>
+        <h2>Humidity: {{humid}}</h2>
+      </div>
+      <div class="item item-icon-left">
+        <i class="icon ion-thermometer"></i>
+        <h2>Feels Like: {{feels}}&deg;</h2>
+      </div>
+
+      <div class="item item-icon-left">
+        <i class="icon ion-shuffle"></i>
+        <h2>Wind: {{wind}}mph</h2>
+      </div>
+    </div>
+
+</ion-content>
+</ion-view>
