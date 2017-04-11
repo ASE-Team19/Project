@@ -11,3 +11,5 @@ We planned to create an application which has a registration page and login page
 Wiki for Increment-I:  https://github.com/ASE-Team19/Project/wiki/Increment-1
 
 Wiki for Increment-II: https://github.com/ASE-Team19/Project/wiki/Increment-II
+
+Wiki for Increment-III: https://github.com/ASE-Team19/Project/wiki/Increment-III
