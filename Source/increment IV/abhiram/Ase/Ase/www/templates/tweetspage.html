@@ -1,0 +1,75 @@
+<ion-view style="background-color:black" id="page7" title="Welcome to TRAVEL BUDDY" xmlns="http://www.w3.org/1999/html">
+  <ion-nav-buttons side="right">
+    <button class="button button-icon button-clear ion-home"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header" padding="false" ng-init="loadMenu()" style="background: url(img/bg2.jpg) center; background-size: cover;">
+
+    <hscroller>
+      <hcard ng-repeat="item in items" index="{{$index}}" desc="{{item.desc}}" image="{{item.image}}"></hcard>
+    </hscroller>
+
+    <table>
+      <tbody>
+      <tr>
+        <div class="list card" >
+          <div class="item item-image">
+            <img src="img/img1.gif" width="1000px"; height="250px">
+          </div>
+        </div>
+      </tr>
+      <br/>
+      <tr>
+        <td>
+          <div class="list card"  style="width: 190px; height: 150px;">
+            <div class="item item-bg-image" >
+              <img src="img/wea2.png" ng-click="gowea()" >
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="list card" style="width: 190px; height: 150px;">
+            <div class="item item-bg-image">
+              <img src="img/tran1.jpg" ng-click="goLevelLogo()">
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="list card"  style="width: 190px; height: 150px;">
+            <div class="item item-bg-image" >
+              <img src="img/cur1.png" ng-click="goLevel()" >
+            </div>
+          </div>
+        </td>
+
+        <td>
+          <div class="list card" style="width: 190px; height: 150px;">
+            <div class="item item-bg-image">
+              <a href="templates/map.html" ><img src="img/hot1.jpg" > </a>
+            </div>
+          </div>
+        </td>
+      </tr>
+          <tr>
+        <td>
+          <div class="list card"  style="width: 190px; height: 150px;">
+             <a href="templates/tweetspage.html"><div class="item item-bg-image" >
+           <img src="img/twi1.jpg"  > 
+            </div></a> 
+
+          </div>
+        </td>
+
+        <td>
+          <div class="list card" style="width: 190px; height: 150px;">
+            <div class="item item-bg-image">
+              <a href="templates/map.html" ><img src="templates/twitterfeeds/theme%2520park/themepark.jpg" > </a>
+            </div>
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </ion-content>
+</ion-view>

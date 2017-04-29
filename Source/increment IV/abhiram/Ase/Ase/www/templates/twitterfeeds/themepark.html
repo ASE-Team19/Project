@@ -1,0 +1,80 @@
+<ion-view style="background-color:black" id="page7" title="Tweets" xmlns="http://www.w3.org/1999/html">
+  <ion-nav-buttons side="right">
+    <button class="button button-icon button-clear ion-home"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header" padding="false" ng-init="loadMenu()" style="background: url(img/bg2.jpg) center; background-size: cover;">
+
+    <hscroller>
+      <hcard ng-repeat="item in items" index="{{$index}}" desc="{{item.desc}}" image="{{item.image}}"></hcard>
+    </hscroller>
+
+    <table>
+      <tbody>
+<!--
+      <tr>
+        <div class="list card" style="width: 190px; height: 150px;" >
+          <div class="item item-image">
+            <img src="ski/ski.jpeg" >
+          </div>
+        </div>
+      </tr>
+          <tr>
+        <div class="list card" style="width: 190px; height: 150px;" >
+          <div class="item item-image">
+            <img src="theme%2520park/themepark.jpg" >
+          </div>
+        </div>
+      </tr>
+      <br/>
+-->
+		   <tr>
+        <td>
+          <div class="list card"  >
+            <a href="theme%20park/CedarPoint.html">  <div class="item item-bg-image" >
+              <img src="theme%20park/CedarPoint.jpg" style="width: 390px; height: 450px;" ng-click="gowea()" >
+				</div></a>
+			   <font color="white"><div class="desc" style= "background-color:darkblue"><b> Cedar Point</b></div></font>
+          </div>
+        </td>
+        <td>
+          <div class="list card" >
+            <a href="theme%20park/Knolbels.html">  <div class="item item-bg-image">
+              <img src="theme%20park/Knolbels.jpg" style="width: 390px; height: 450px;" ng-click="goLevelLogo()">
+				</div></a>
+			     <font color="white"><div class="desc" style= "background-color:darkblue"><b> Knolbels</b></div></font>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="list card"  >
+            <a href="theme%20park/six%20flags%20california.html">  <div class="item item-bg-image" >
+              <img src="theme%20park/six%20flags%20california.jpg" style="width: 390px; height: 450px;" ng-click="gowea()" >
+				</div></a>
+			     <font color="white"><div class="desc" style= "background-color:darkblue"><b> Six Flags Park</b></div></font>
+          </div>
+        </td>
+        <td>
+          <div class="list card" >
+             <a href="theme%20park/universal%20land.html"> <div class="item item-bg-image">
+              <img src="theme%20park/universal%20land.jpg" style="width: 390px; height: 450px;" ng-click="goLevelLogo()">
+				 </div></a>
+			     <font color="white"><div class="desc" style= "background-color:darkblue"><b> Universal Land</b></div></font>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="list card"  >
+             <a href="theme%20park/waltdisneyworld.html"> <div class="item item-bg-image" >
+              <img src="theme%20park/waltdisneyworld.jpg"  style="width: 390px; height: 450px;" ng-click="goLevel()" >
+				 </div></a>
+			     <font color="white"><div class="desc" style= "background-color:darkblue"><b>Walt Disney World</b></div></font>
+          </div>
+        </td>
+      </tr>
+         
+      </tbody>
+    </table>
+  </ion-content>
+</ion-view>
