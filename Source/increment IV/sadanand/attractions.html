@@ -1,0 +1,44 @@
+<ion-view view-title="  Attractions"  ng-controller="MapsCtrl">
+  <ion-header-bar class="bar-calm">
+    <h1 class="title">Events</h1>
+
+  </ion-header-bar>
+
+  <ion-content style="background: url(img/globe.png) center; background-size: cover;" padding="true" class="has-header">
+
+    <div id="map" style="height:60%; width:100%;">
+
+    </div>
+    <br>
+    <div class="aa">
+    <div class="list list-inset">
+      <label class="item item-input" style="">
+        <input  type="text" id="location" placeholder="Enter Location" ng-model="text1">
+      </label>
+      <select id="SourceLanguage" ng-model="sourceLang" >
+        <option value="4deefb944765f83613cdba6e" selected="true">Historic Site</option>
+        <option value="4bf58dd8d48988d1fd941735" >Shopping Malls</option>
+        <option value="4bf58dd8d48988d180941735">Multiplex</option>
+        <option value="4bf58dd8d48988d181941735">Museums</option>
+        <option value="4bf58dd8d48988d184941735">Stadiums</option>
+        <option value="4bf58dd8d48988d182941735">Theme Parks</option>
+        <option value="4d4b7105d754a06374d81259">Food</option>
+        <option value="4d4b7105d754a06376d81259">Nightlife Spots</option>
+        <option value="4d4b7105d754a06377d81259">Outdoors & Recreation Places</option>
+        <option value="4d4b7105d754a06378d81259">Shops and Service</option>
+        <option value="4d4b7105d754a06379d81259">Travel & Transport</option>
+        <option value="4bf58dd8d48988d1fa931735">Hotels</option>
+        <option value="4bf58dd8d48988d129951735">Train Station</option>
+        <option value="54541b70498ea6ccd0204bff">Transportation Service</option>
+      </select>
+    </div></div><br><br>
+
+    <div style="text-align:center;">
+      <button class="button button-calm button-large "  style="width:30%;" ng-click="mapg()" >Go</button>
+
+    </div>
+
+
+
+  </ion-content>
+</ion-view>
