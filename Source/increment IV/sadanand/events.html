@@ -1,0 +1,101 @@
+<ion-view view-title="  Events"  ng-controller="EventsCtrl">
+  <ion-header-bar class="bar-calm">
+    <h1 class="title">Events</h1>
+
+  </ion-header-bar>
+
+    <ion-content style="background: url(img/5.jpg) center; background-size: cover;" padding="true" class="has-header">
+
+    <div class="list">
+      <div class="item item-input-inset">
+        <label class="item item-input-wrapper">
+          <input type="text"  id="place" placeholder="Place"  ng-model="text1" style="width:80px " height="80px" >
+
+        </label>
+        <label class="item item-input-wrapper">
+          <input type="text"  id="cat" placeholder="Category"  ng-model="text2" style="width:80px " height="80px" >
+
+        </label>
+        <label class="item item-input-wrapper">
+          <input type="text"  id="key" placeholder="Keyword"  ng-model="text3" style="width:80px " height="80px" >
+
+        </label>
+
+        <button class="button button-balanced button-large button-shape" style="width: 20%" ng-click="events()"> Get</button>
+      </div>
+    </div>
+
+
+
+    <li ng-repeat="r in eventlist">
+      <h3 ><b>{{r.title}}</b></h3>
+      <div class="partition-wrap">
+        <div class="partition1">
+
+          <img ng-src="{{r.image}}" style="width: 100px; height: 100px;" align="center"/>
+
+        </div>
+
+        <div class="partition3">
+          <div class="item item-icon-left">
+            <i class="icon ion-clock"></i>
+            <h4>Time: <b>{{r.start}}</b></h4>
+          </div>
+        </div>
+        <div class="partition4">
+          <div class="item item-icon-left">
+            <i class="icon ion-home"></i>
+            <h4>Venue Name: <b>{{r.venuename}}</b></h4>
+          </div>
+        </div>
+        <div class="partition5">
+          <div class="item item-icon-left">
+            <i class="icon ion-map"></i>
+            <h4>Venue Address: <b>{{r.venueaddress}}</b></h4>
+          </div>
+        </div>
+        <div class="partition6">
+          <div class="item item-icon-left">
+            <i class="icon ion-location"></i>
+            <h4>City:<b> {{r.city}}</b></h4>
+
+          </div>
+        </div>
+      </div>
+      <div class="partition7">
+        <div class="item item-icon-left">
+          <i class="icon ion-ios-redo"></i>
+          <h4>Venue URL:</h4><a href="{{r.url}}"> {{r.url}}</a>
+
+        </div>
+        <div class="partition8">
+        <div class="item item-icon-left">
+          <i class="icon ion-ios-redo"></i>
+          <h4>Reviews:</h4>
+
+          <form method='post'>
+          <input type='text' name='name' placeholder="Name"  ng-model="data.name"style="width:100px "  height="100px" />
+
+           <input type='text' name='email' placeholder="Email" id='email' ng-model="data.email" style="width:100px " height="100px" />
+            <input type='text' name='phone' placeholder="Mobile" id='phone' ng-model="data.phone"  style="width:100px " height="100px" />
+
+            <textarea name='comment' id='comment' placeholder="Add Reviews" ng-model="data.comment" style="border: 1px solid black"></textarea><br>
+            <button class="button button-calm button-large "  style="width:30%;" ng-click="evs()" >Share</button>
+          </form>
+
+
+        </div>
+
+
+
+      </div>
+      </div>
+    </li>
+
+
+
+
+
+
+  </ion-content>
+</ion-view>
